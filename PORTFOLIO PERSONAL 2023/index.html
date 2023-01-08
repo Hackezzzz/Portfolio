@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Portfolio 2023</title>
+</head>
+<body>
+
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">HUGO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MÍ</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CV</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    
+    <!-- Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzOcLJnHhOCg-krZqlGg6ESCX1uqwEJx8Yw8NRgI8Vm8o4KYamXNWoLFvFUp1_XdZoJvw&usqp=CAU" alt="">
+            </div>
+            <h1>HUGO ARRIBAS </h1>
+            <h2>Estudiante <a href="https://www.ucm.es/" target="_blank">UCM</a> - Aprendiz de Software</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/hugo.arribasmunoz/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/huguezzz"><i class="fa-brands fa-twitter" target="_blank"></i></a>
+                <a href="https://github.com/HMJ07"><i class="fa-brands fa-github" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/hugo-arribas-mu%C3%B1oz-86355322b/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/arribas.07/"><i class="fa-brands fa-instagram" target="_blank"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Hugo Arribas Muñoz. </span> A lo largo de mi infancia, cada vez me iba más gustando la tecnología y, "a posteriori", la programación. Por eso, estoy haciendo <a href="https://www.youtube.com/watch?v=50RbVujPPGs">'Front-End y Back-End'</a></p>
+
+            <hr>
+
+            <div class="fila">
+                
+                <div class="columna">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños -> </strong>
+                            17-05-07
+                        </li>
+                        <li>
+                            <strong>Teléfono -> </strong>
+                            +34 682 468 220
+                        </li>
+                        <li>
+                            <strong>Email -> </strong>
+                            hugoarribasmunoz2019@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.hugoam.com
+                        </li>
+                        <li>
+                            <strong>Dirección -> </strong>
+                            Trescasas, Segovia(España)
+                        </li>
+                        <li>
+                            <strong>Empleo -> </strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>    
+
+                        <div class="interes">
+                                <i class="fa-sharp fa-solid fa-headphones"></i>
+                                <span>MÚSICA</span>
+                        </div>
+
+                        <div class="interes">
+                                <i class="fa-solid fa-plane"></i>
+                                <span>VIAJAR</span>
+                        </div>
+
+                        <div class="interes">
+                                <i class="fa-solid fa-book"></i>
+                                <span>APRENDER</span>
+                        </div>
+
+                        <div class="interes">
+                                <i class="fa-solid fa-basketball"></i>
+                                <span>DEPORTE</span>
+                                
+                        </div>
+
+                        <div class="interes">
+                                <i class="fa-solid fa-car"></i>
+                                <span>COCHES</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-children"></i>
+                                <span>FAMILIA</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-clapperboard"></i>
+                                <span>EDITAR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <div class="fila">
+
+                <!-- SKILLS TÉCNICAS -->
+                <div class="columna">
+                    <h3>Habilidades Técnicas</h3>
+                    
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>86%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>PHOTOSHOP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>C</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>67%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- SKILLS PROFESIONALES -->
+                <div class="columna">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>72%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>96%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>        
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Currículum -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Mtemáticas - Programación</h4>
+                        <span class="casa">Universidad Complutense de Madrid</span>
+                        <span class="fecha">2025 - 2038</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad Complutense de Madrid </span>
+                        <span class="fecha">2025 - 2030</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Deportes</h4>
+                        <span class="casa">Universidad Complutense de Madrid</span>
+                        <span class="fecha">2025 - 2030</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Back-End</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front-End</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Full Stack</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="https://github.com/codigowebmp/portfolio-nick/blob/main/img/p1.jpg?raw=true" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://raw.githubusercontent.com/codigowebmp/portfolio-nick/main/img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://raw.githubusercontent.com/codigowebmp/portfolio-nick/main/img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://raw.githubusercontent.com/codigowebmp/portfolio-nick/main/img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://raw.githubusercontent.com/codigowebmp/portfolio-nick/main/img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="https://raw.githubusercontent.com/codigowebmp/portfolio-nick/main/img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Ahora el Formulario xd -->
+                <div class="columna">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Nº de Teléfono">
+                    <input type="text" placeholder="Correo electrónico">
+                    <input type="text" placeholder="Tema a tratar">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>Enviar Mensaje <i class="fa-solid fa-share-from-square"></i><span class="overlay"></span></button>
+                </div>
+                <!-- Dirección de casita xd -->
+                <div class="columna">
+                    <img src="img/ubicación.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Trescasas, Segovia(España)
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-phone-volume"></i>
+                                Llámame: 682468220
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: hugoarribasmunoz2019@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+
+        <div class="redes">
+            <a href="https://www.facebook.com/hugo.arribasmunoz/"><i class="fa-brands fa-facebook-f"target="_blank"></i></a>
+                <a href="https://twitter.com/huguezzz"><i class="fa-brands fa-twitter"target="_blank"></i></a>
+                <a href="https://github.com/HMJ07"><i class="fa-brands fa-github"target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/hugo-arribas-mu%C3%B1oz-86355322b/"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/arribas.07/"><i class="fa-brands fa-instagram"target="_blank"></i></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
